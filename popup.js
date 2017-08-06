@@ -93,6 +93,8 @@ function renderStatus(statusText) {
 }
 
 function findDuplicates() {
+  chrome.tabs.executeScript(null, {file: "find_tracks.js"});
+
   renderStatus("Got click!");
 }
 
