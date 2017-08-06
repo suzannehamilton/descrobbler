@@ -1,4 +1,4 @@
-(function () {
+var unscrobbler = (function () {
   function areDatesSimilar(date1, date2) {
     if (date1 === null || date2 === null) {
       return false;
@@ -30,9 +30,7 @@
     return duplicates;
   }
 
-  var duplicates = findDuplicates();
-
-  duplicates.forEach(function (scrobble) {
-    scrobble.setAttribute('style', 'background: darkcyan');
-  });
+  return {
+    findDuplicates: findDuplicates
+  }
 }());
