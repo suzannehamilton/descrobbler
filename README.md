@@ -1,2 +1,3 @@
 # descrobbler
-(Work in progress) Chrome extension for removing duplicate last.fm scrobbles
+(Work in progress) Chrome and Firefox extension for removing duplicate last.fm
+scrobbles
